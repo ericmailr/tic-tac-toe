@@ -1,0 +1,44 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: rgb(244, 227, 227);
+}
+
+#board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    color: black;
+    border-style: solid;
+    border-color: white;
+}
+
+#form {
+    width: 400px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    margin: 15px auto;
+}
+
+div[id^='space'] {
+    background-color: rgb(244, 227, 227);
+    border-style: solid;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2 {
+    text-align: center;
+}
