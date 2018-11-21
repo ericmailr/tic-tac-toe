@@ -22,6 +22,12 @@ const game = () => {
     document.getElementsByTagName('button')[0].innerHTML = "Reset!";
     const playerX = Player(document.getElementById('playerx-name').value, "X");
     const playerO = Player(document.getElementById('playero-name').value, "O");
+    if (playerX.name == "") {
+        playerX.name = "Player X";
+    }
+    if (playerO.name == "") {
+        playerO.name = "Player O";
+    }
     const winningCombos = gameboard.winningCombos;
 
     const gameWinner = (markedSpaces) => {
